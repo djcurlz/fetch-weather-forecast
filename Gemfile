@@ -44,9 +44,25 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Rubocop for Ruby code style checking and formatting [https://rubocop.org/]
+gem 'rubocop', '~> 1.63', '>= 1.63.5'
+
+# RuboCop extension focused on enforcing Rails best practices and coding conventions [https://rails.rubystyle.guide/]
+gem 'rubocop-rails', '~> 2.25'
+
+# Object geocoding (by street or IP address), distance queries for ActiveRecord and Mongoid, result caching, and more. [https://www.rubygeocoder.com/]
+gem 'geocoder', '~> 1.8', '>= 1.8.3'
+
+# Simple flexible HTTP client library, with support for multiple backends.
+gem "faraday"
+gem "faraday_middleware"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  # Faker a library for generating fake data [https://github.com/faker-ruby/faker]
+  gem 'faker', '~> 3.3', '>= 3.3.1'
 end
 
 group :development do
