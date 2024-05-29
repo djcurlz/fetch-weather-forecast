@@ -12,7 +12,7 @@ class WeatherService
       units: "metric",
     })
     body = response.body
-    puts "DEBUG: body = #{body}"
+    Rails.logger.info ("Openweather api response body = #{body}")
     body or raise IOError.new "OpenWeather response body failed"
     body["main"] or raise IOError.new "OpenWeather main section is missing"
     body["main"]["temp"] or raise IOError.new "OpenWeather temperature is missing"

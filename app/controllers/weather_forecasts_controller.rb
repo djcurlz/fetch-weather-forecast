@@ -14,6 +14,7 @@ class WeatherForecastsController < ApplicationController
           country_code = response[0].data["properties"]["country_code"]
           postal_code = response[0].data["properties"]["postcode"]
           @weather_cache_key = "#{country_code}/#{postal_code}"
+          Rails.logger.info "Controller weather_cache_key = #{@weather_cache_key}"
           @weather_cache_pulled = Rails.cache.exist?(@weather_cache_key)
           # Cache forecast details for 30 minutes
           @weather = Rails.cache.fetch(@weather_cache_key, expires_in: 30.minutes) do
