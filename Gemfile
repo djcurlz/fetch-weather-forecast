@@ -63,6 +63,10 @@ group :development, :test do
 
   # Faker a library for generating fake data [https://github.com/faker-ruby/faker]
   gem 'faker', '~> 3.3', '>= 3.3.1'
+
+  # Testing
+  gem 'rspec', '~> 3.13'
+  gem 'rspec-rails', '~> 6.1', '>= 6.1.2'
 end
 
 group :development do
@@ -80,4 +84,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  gem 'webmock', '~> 3.23', '>= 3.23.1'
+  gem 'vcr', '~> 6.2'
 end
