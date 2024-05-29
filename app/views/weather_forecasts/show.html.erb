@@ -1,0 +1,25 @@
+<%= render "shared/flash" %>
+
+<h1><span style="color: blue;"> Fetch My Forecast</span></h1>
+
+<%= form_with(method: 'get', local: true) do %>
+  <%= label :address, "Enter an address below to retrieve the forecast for it" %><br>
+  <%= text_field_tag(:address, @address || @address_default, size: 100) %><br>
+  <%= submit_tag("RETRIEVE") %>
+<% end %>
+
+<% if defined?(@weather) %>
+  <ul>
+    <li>Current Temperature: <%= @weather.temperature %> ℃</li>
+    <li>Low Temperature: <%= @weather.temperature_min %> ℃</li>
+    <li>High Temperature: <%= @weather.temperature_max %> ℃</li>
+    <li>Humidity: <%= @weather.humidity %>%</li>
+    <li>Wind Speed: <%= @weather.wind_speed%> mph</li>
+    <li>Description: <%= @weather.description %></li>
+    <% if @weather_cache_pulled == true %>
+      <li>Result pulled from cache? <b><span style="color: green;">YES</span></b></li>
+    <% else %>
+      <li>Result pulled from cache? <b><span style="color: red;">NO</span></b></li>
+    <% end %>
+  </ul>
+<% end %>
