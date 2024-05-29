@@ -11,7 +11,7 @@ class WeatherForecastsTest < ApplicationSystemTestCase
       params: { 
         address: address 
       }
-    assert_selector "h1", text: "Weather Forecast Details"
+    assert_selector "h1", text: "Fetch My Forecast"
   end
 
 end
