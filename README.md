@@ -106,7 +106,7 @@ Create a controller that can accept an address as an input parameter. One method
 
 Please see controller test in `test/controllers/forecasts_controller_test.rb`:
 
-Generate a system test that will launch the web page and provide the correct placeholder for future work:
+Generate a system test that will launch the web page and test show page contains correct header.
 
 ```sh
 % bin/rails generate system_test forecasts
@@ -143,7 +143,7 @@ openweather:
   api_key: <API KEY>
 ```
 
-Create a `/config/initializers/geocoder.rb file with the contents below
+Create a `/config/initializers/geocoder.rb` file with the contents below
 
 ```ruby
 Geocoder.configure(
@@ -152,7 +152,7 @@ Geocoder.configure(
 )
 ```
 
-* To implement the Openweathermap API as an application service I created `app/services/weather_service.rb` to use Faraday to make a GET request to openweathermap URL and parse the response to define the current temp, low temp (min), high temp (max) plus the humidity, pressure and description.
+* To implement the Openweathermap API as an application service I created `app/services/weather_service.rb` to use Faraday to make a GET request to openweathermap URL and parse the response to define the current temp, low temp (min), high temp (max) plus the humidity, wind speed and description.
 
 ## Display the requested forecast details to the user
 
