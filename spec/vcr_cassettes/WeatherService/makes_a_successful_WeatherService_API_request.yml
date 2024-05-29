@@ -1,0 +1,208 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<API_KEY>&lat=40.4784&lon=-104.9854&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 May 2024 16:34:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=40.48&lon=-104.99&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9854,"lat":40.4784},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"base":"stations","main":{"temp":21.39,"feels_like":21.02,"temp_min":18.52,"temp_max":27.47,"pressure":1016,"humidity":55},"visibility":10000,"wind":{"speed":3.09,"deg":110},"clouds":{"all":0},"dt":1717000445,"sys":{"type":2,"id":2003866,"country":"US","sunrise":1716982383,"sunset":1717035730},"timezone":-21600,"id":5581329,"name":"Redmond","cod":200}'
+  recorded_at: Wed, 29 May 2024 16:34:05 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<API_KEY>&lat=40.4784&lon=-104.9854&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 May 2024 16:38:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=40.48&lon=-104.99&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9854,"lat":40.4784},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"base":"stations","main":{"temp":21.39,"feels_like":21.02,"temp_min":18.52,"temp_max":27.47,"pressure":1016,"humidity":55},"visibility":10000,"wind":{"speed":3.09,"deg":110},"clouds":{"all":0},"dt":1717000445,"sys":{"type":2,"id":2003866,"country":"US","sunrise":1716982383,"sunset":1717035730},"timezone":-21600,"id":5581329,"name":"Redmond","cod":200}'
+  recorded_at: Wed, 29 May 2024 16:37:59 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<API_KEY>&lat=40.4784&lon=-104.9854&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 May 2024 16:39:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=40.48&lon=-104.99&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9854,"lat":40.4784},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"base":"stations","main":{"temp":21.39,"feels_like":21.02,"temp_min":18.52,"temp_max":27.47,"pressure":1016,"humidity":55},"visibility":10000,"wind":{"speed":3.09,"deg":110},"clouds":{"all":0},"dt":1717000445,"sys":{"type":2,"id":2003866,"country":"US","sunrise":1716982383,"sunset":1717035730},"timezone":-21600,"id":5581329,"name":"Redmond","cod":200}'
+  recorded_at: Wed, 29 May 2024 16:39:37 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<API_KEY>&lat=40.4784&lon=-104.9854&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 May 2024 16:41:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=40.48&lon=-104.99&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9854,"lat":40.4784},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"base":"stations","main":{"temp":21.39,"feels_like":21.02,"temp_min":18.52,"temp_max":27.47,"pressure":1016,"humidity":55},"visibility":10000,"wind":{"speed":3.09,"deg":110},"clouds":{"all":0},"dt":1717000445,"sys":{"type":2,"id":2003866,"country":"US","sunrise":1716982383,"sunset":1717035730},"timezone":-21600,"id":5581329,"name":"Redmond","cod":200}'
+  recorded_at: Wed, 29 May 2024 16:41:15 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=<API_KEY>&lat=40.4784&lon=-104.9854&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 May 2024 16:41:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=40.48&lon=-104.99&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9854,"lat":40.4784},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"base":"stations","main":{"temp":21.39,"feels_like":21.02,"temp_min":18.52,"temp_max":27.47,"pressure":1016,"humidity":55},"visibility":10000,"wind":{"speed":3.09,"deg":110},"clouds":{"all":0},"dt":1717000445,"sys":{"type":2,"id":2003866,"country":"US","sunrise":1716982383,"sunset":1717035730},"timezone":-21600,"id":5581329,"name":"Redmond","cod":200}'
+  recorded_at: Wed, 29 May 2024 16:41:54 GMT
+recorded_with: VCR 6.2.0
