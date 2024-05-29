@@ -93,6 +93,10 @@ To get started check out the VsCode [DOCS](https://code.visualstudio.com/docs)
 - [geocoder](https://rubygems.org/gems/geocoder) : Object geocoding, reverse geocoding, distance queries for ActiveRecord and Mongoid, result caching, and more.
 - [faraday](https://rubygems.org/gems/faraday) : HTTP/REST API client library.
 - [faraday_middleware](https://rubygems.org/gems/faraday_middleware) : Various middleware for Faraday
+- [rspec](https://rubygems.org/gems/rspec) : BDD for Ruby
+- [rspec-rails](https://rubygems.org/gems/rspec-rails) : rspec-rails is a testing framework for Rails 5+.
+- [webmock](https://rubygems.org/gems/webmock) : allows stubbing HTTP requests and setting expectations on HTTP requests.
+- [vcr](https://rubygems.org/gems/vcr) : Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
 
 ## Accept an address as input
 
@@ -128,7 +132,7 @@ There are a variety of ways to get forecast data. I choose the approach below.
 
 * Next I send the latitude and longitude to the [OPENWEATHERMAP API](https://openweathermap.com)
 
-* To enable making calls to the Geoapify API I created an API KEY and used Rails credentials for my development environment following the steps outlined [HERE](https://railsnotes.xyz/blog/custom-credentials-in-your-rails-app#adding-credentials-via-the-terminal)
+* To enable making calls to the Geoapify API I created an API KEY and used Rails credentials for my development and test environments following the steps outlined [HERE](https://railsnotes.xyz/blog/custom-credentials-in-your-rails-app#adding-credentials-via-the-terminal)
 
 ```sh
 EDITOR="code --wait"  bin/rails credentials:edit --environment development
@@ -141,6 +145,11 @@ geoapify:
 
 openweather:
   api_key: <API KEY>
+```
+
+Repeat adding api keys to the *.test.yml as well for usage by Rspec later
+```sh
+EDITOR="code --wait"  bin/rails credentials:edit --environment test
 ```
 
 Create a `/config/initializers/geocoder.rb` file with the contents below
@@ -189,3 +198,11 @@ Test Case 2: Click `RETRIEVE` again for the same address (within 30 minutes)
 
 You should see output similar to below:
 ![Forecast Cached](app/assets/images/ForecastCached.png)
+
+### Run Rspec to test WeatherService API
+
+```sh
+rspec -f documentation spec/services/weather_service_spec.rb
+```
+
+Examine `spec/services/weather_service_spec.rb` in VsCode for details of what's tested
