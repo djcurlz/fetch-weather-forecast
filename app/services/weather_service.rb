@@ -1,7 +1,6 @@
 class WeatherService
   def initialize
     @api_key = Rails.application.credentials.dig(:openweather, :api_key)
-    Rails.logger.info ("WeatherService api_key = #{@api_key}")
   end
 
   def self.call(latitude, longitude)
