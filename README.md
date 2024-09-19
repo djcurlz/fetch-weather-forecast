@@ -134,6 +134,8 @@ There are a variety of ways to get forecast data. I choose the approach below.
 
 * To enable making calls to the Geoapify API I created an API KEY and used Rails credentials for my development and test environments following the steps outlined [HERE](https://railsnotes.xyz/blog/custom-credentials-in-your-rails-app#adding-credentials-via-the-terminal)
 
+NOTE: if `/config/credentials/development.yml.enc` exists in your directory after cloning the project, remove this prior to running the command below.
+
 ```sh
 EDITOR="code --wait"  bin/rails credentials:edit --environment development
 ```
@@ -198,11 +200,3 @@ Test Case 2: Click `RETRIEVE` again for the same address (within 30 minutes)
 
 You should see output similar to below:
 ![Forecast Cached](app/assets/images/ForecastCached.png)
-
-### Run Rspec to test WeatherService API
-
-```sh
-rspec -f documentation spec/services/weather_service_spec.rb
-```
-
-Examine `spec/services/weather_service_spec.rb` in VsCode for details of what's tested
